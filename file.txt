@@ -1,0 +1,3 @@
+Nmap: Nmap is a powerful network scanning tool that can be used for port scanning, version detection, and OS fingerprinting. It can be used to identify IP addresses, open ports, and banners on target systems.
+
+Wireshark: Wireshark is a network protocol analyzer that can capture and display network traffic. It can be used to identify IP addresses, MAC addresses, and encryption details of different network protocols.
