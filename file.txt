@@ -1,3 +1,35 @@
 Nmap: Nmap is a powerful network scanning tool that can be used for port scanning, version detection, and OS fingerprinting. It can be used to identify IP addresses, open ports, and banners on target systems.
 
 Wireshark: Wireshark is a network protocol analyzer that can capture and display network traffic. It can be used to identify IP addresses, MAC addresses, and encryption details of different network protocols.
+
+open source tool that can be used to generate a report on information gathering for RDP is "rdpy-rdp-scanner". It can be used to identify and enumerate information such as IP address, MAC address, ports details, encryption details, and banner information about RDP.
+
+Here are the steps to use "rdpy-rdp-scanner" to generate a report on information gathering about RDP:
+
+Install Python on your system if it is not already installed. You can download and install it from the official Python website.
+
+Install rdpy-rdp-scanner by running the following command in your command prompt or terminal:
+
+Copy code
+pip install rdpy-rdp-scanner
+Once the installation is complete, run the following command to scan for RDP servers:
+
+go
+Copy code
+rdp_scanner.py -r <IP range>
+Replace <IP range> with the range of IP addresses you want to scan. For example, if you want to scan all IP addresses in the range 192.168.1.1-192.168.1.255, you would use:
+
+Copy code
+rdp_scanner.py -r 192.168.1.1-255
+The scanner will generate a report containing information about each RDP server that was found, including the IP address, port, encryption type, and banner information.
+
+You can save the report to a file using the following command:
+
+php
+Copy code
+rdp_scanner.py -r <IP range> -o <output file>
+Replace <output file> with the name of the file you want to save the report to. For example:
+
+Copy code
+rdp_scanner.py -r 192.168.1.1-255 -o report.txt
+This will save the report to a file named "report.txt" in the current directory.
